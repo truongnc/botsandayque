@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: 'Sắn Dây Quê | Bột Sắn Dây Nguyên Chất',
   description: 'Bột sắn dây nguyên chất từ gia đình — sản xuất thủ công, có chứng nhận VSATTP, tốt cho sức khỏe. Giao hàng toàn quốc.',
   keywords: 'bột sắn dây, sắn dây nguyên chất, thực phẩm healthy, bột sắn dây quê, mua bột sắn dây',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   openGraph: {
     title: 'Sắn Dây Quê | Bột Sắn Dây Nguyên Chất',
     description: 'Bột sắn dây nguyên chất từ gia đình — sản xuất thủ công, có chứng nhận VSATTP',
