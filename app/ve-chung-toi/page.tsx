@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '3 Thế Hệ Gìn Giữ Nghề Truyền Thống | Sắn Dây Quê',
     description: 'Từ đôi bàn tay của bà nội, gia đình chúng tôi đã gắn bó với nghề làm bột sắn dây hơn 30 năm.',
-    url: 'https://sandayque.vn/ve-chung-toi',
+    url: 'https://sandayque.com/ve-chung-toi',
   },
 }
 

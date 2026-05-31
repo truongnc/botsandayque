@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://sandayque.vn/sitemap.xml',
+    sitemap: 'https://sandayque.com/sitemap.xml',
   }
 }

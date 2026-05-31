@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Đặt Hàng Bột Sắn Dây | Sắn Dây Quê',
     description: 'Đặt mua bột sắn dây nguyên chất. Xác nhận trong 30 phút, giao toàn quốc.',
-    url: 'https://sandayque.vn/lien-he',
+    url: 'https://sandayque.com/lien-he',
   },
 }
 
@@ -56,13 +56,13 @@ export default function ContactPage() {
                     <div className="text-blue-600">0353 795 785</div>
                   </div>
                 </a>
-                <a href="mailto:lienhe@sandayque.vn" className="flex items-center gap-3 text-sm text-gray-600 hover:text-brand-600 transition-colors">
+                <a href="mailto:lienhe@sandayque.com" className="flex items-center gap-3 text-sm text-gray-600 hover:text-brand-600 transition-colors">
                   <div className="w-9 h-9 bg-brand-100 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Mail className="w-4 h-4 text-brand-600" />
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-brand-600">lienhe@sandayque.vn</div>
+                    <div className="text-brand-600">lienhe@sandayque.com</div>
                   </div>
                 </a>
                 <div className="flex items-start gap-3 text-sm text-gray-600">
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <li>✅ Hỗ trợ logistics quốc tế</li>
               </ul>
               <a
-                href="mailto:lienhe@sandayque.vn?subject=Hợp tác xuất khẩu bột sắn dây"
+                href="mailto:lienhe@sandayque.com?subject=Hợp tác xuất khẩu bột sắn dây"
                 className="inline-block w-full text-center bg-white text-brand-700 font-semibold text-sm py-2.5 rounded-xl hover:bg-brand-50 transition-colors"
               >
                 📧 Gửi yêu cầu hợp tác
@@ -167,7 +167,7 @@ export default function ContactPage() {
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="mailto:lienhe@sandayque.vn?subject=Yêu cầu báo giá số lượng lớn / Hợp tác xuất khẩu"
+                  href="mailto:lienhe@sandayque.com?subject=Yêu cầu báo giá số lượng lớn / Hợp tác xuất khẩu"
                   className="inline-flex items-center justify-center gap-2 bg-white text-brand-700 font-semibold px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors text-sm"
                 >
                   📧 Gửi email báo giá

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sản Phẩm Bột Sắn Dây Nguyên Chất | Sắn Dây Quê',
     description: 'Bột sắn dây nguyên chất từ gia đình 3 thế hệ. Không phụ gia, có chứng nhận VSATTP.',
-    url: 'https://sandayque.vn/san-pham',
+    url: 'https://sandayque.com/san-pham',
   },
 }
 
