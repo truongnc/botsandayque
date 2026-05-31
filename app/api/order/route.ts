@@ -60,7 +60,7 @@ async function sendEmailNotification(order: OrderData) {
 
   await transporter.sendMail({
     from: `"Sắn Dây Quê" <${process.env.GMAIL_USER}>`,
-    to: process.env.GMAIL_USER,
+    to: 'lienhe@sandayque.com',
     subject: `🛍️ Đơn hàng mới từ ${order.name} — ${order.phone}`,
     html: `
       <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
