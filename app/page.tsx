@@ -6,9 +6,9 @@ const products = [
   {
     id: 1,
     name: 'Bột Sắn Dây Nguyên Chất 500g',
-    price: '85.000₫',
-    originalPrice: '100.000₫',
-    image: 'https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=400&h=400&fit=crop',
+    price: '120.000₫',
+    originalPrice: '140.000₫',
+    image: '/images/bot-san-day.webp',
     badge: 'Bán chạy',
     rating: 4.9,
     reviews: 128,
@@ -16,9 +16,9 @@ const products = [
   {
     id: 2,
     name: 'Bột Sắn Dây Nguyên Chất 1kg',
-    price: '155.000₫',
-    originalPrice: '180.000₫',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop',
+    price: '200.000₫',
+    originalPrice: '240.000₫',
+    image: '/images/san-day-drink.webp',
     badge: 'Tiết kiệm',
     rating: 4.8,
     reviews: 96,
@@ -26,9 +26,9 @@ const products = [
   {
     id: 3,
     name: 'Combo 3 túi 500g',
-    price: '230.000₫',
-    originalPrice: '255.000₫',
-    image: 'https://images.unsplash.com/photo-1611171711912-e3f65fe9e6b8?w=400&h=400&fit=crop',
+    price: '360.000₫',
+    originalPrice: '480.000₫',
+    image: '/images/san-day-nuoc.jpg',
     badge: 'Ưu đãi',
     rating: 5.0,
     reviews: 54,
@@ -111,7 +111,7 @@ export default function HomePage() {
           <div className="relative flex justify-center">
             <div className="relative w-80 h-80 md:w-96 md:h-96">
               <Image
-                src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=600&h=600&fit=crop"
+                src="/images/bot-san-day.webp"
                 alt="Bột sắn dây nguyên chất"
                 fill
                 className="object-cover rounded-3xl shadow-2xl"

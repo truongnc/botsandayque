@@ -28,11 +28,48 @@ const values = [
 ]
 
 const steps = [
-  { step: '01', title: 'Thu hoạch củ sắn dây', desc: 'Củ sắn được thu hoạch vào mùa đông — lúc hàm lượng tinh bột cao nhất, từ vườn nhà và các hộ nông dân quen thuộc.' },
-  { step: '02', title: 'Rửa sạch & Nghiền', desc: 'Củ sắn được rửa nhiều lần với nước sạch, sau đó nghiền tươi ngay trong ngày để giữ dưỡng chất tối đa.' },
-  { step: '03', title: 'Lọc & Ngâm ủ', desc: 'Tinh bột được lọc qua nhiều lớp, ngâm trong nước sạch để loại bỏ tạp chất hoàn toàn. Quá trình này mất 6-8 giờ.' },
-  { step: '04', title: 'Sấy khô tự nhiên', desc: 'Bột được sấy ở nhiệt độ thấp, không dùng hóa chất tẩy trắng. Màu trắng ngà tự nhiên là dấu hiệu của bột nguyên chất.' },
-  { step: '05', title: 'Đóng gói & Kiểm định', desc: 'Đóng gói trong túi kín khí, qua kiểm định chất lượng trước khi giao đến tay khách hàng.' },
+  {
+    step: '01',
+    emoji: '🏔️',
+    title: 'Chọn củ sắn từ miền núi',
+    desc: 'Củ sắn dây được thu mua từ các hộ nông dân vùng núi phía Bắc — nơi đất đai sạch, không thuốc trừ sâu. Củ to, chắc, nhiều tinh bột mới đạt chuẩn.',
+  },
+  {
+    step: '02',
+    emoji: '🚿',
+    title: 'Rửa kỹ & Nghiền tươi',
+    desc: 'Củ sắn được rửa sạch nhiều lần, sau đó nghiền ngay trong ngày để giữ trọn dưỡng chất. Không để qua đêm, không dùng hóa chất tẩy rửa.',
+  },
+  {
+    step: '03',
+    emoji: '💧',
+    title: 'Lắng lọc nhiều lần',
+    desc: 'Tinh bột được lọc qua nhiều lớp vải mịn, ngâm lắng trong nước sạch để loại bỏ hoàn toàn tạp chất và xơ. Quá trình này mất 6–8 giờ cho đến khi bột trắng bóc.',
+  },
+  {
+    step: '04',
+    emoji: '☀️',
+    title: 'Phơi nắng tự nhiên',
+    desc: 'Bột sau khi lắng được trải mỏng phơi ngoài trời nắng. Phơi tự nhiên giúp bột không bị vỡ vụn nát, giữ được độ kết cấu đặc trưng của sắn dây nguyên chất.',
+  },
+  {
+    step: '05',
+    emoji: '💡',
+    title: 'Sấy bóng đèn + hút ẩm',
+    desc: 'Bột được sấy trong nhà sấy chuyên dụng dùng bóng đèn nhiệt và máy hút ẩm — đảm bảo bột khô đều, tránh nấm mốc mà không cần chất bảo quản.',
+  },
+  {
+    step: '06',
+    emoji: '🌸',
+    title: 'Ướp hoa bưởi',
+    desc: 'Bí quyết gia truyền: ướp bột với cánh hoa bưởi tươi (chỉ lấy cánh, bỏ nhụy để tránh làm vàng bột). Tạo hương thơm thanh mát tự nhiên — không dùng hương liệu nhân tạo.',
+  },
+  {
+    step: '07',
+    emoji: '📦',
+    title: 'Đóng gói & Bảo quản',
+    desc: 'Đóng gói trong túi zip kín khí, hút chân không. Bảo quản nơi khô thoáng, tránh ánh sáng trực tiếp. Hạn sử dụng 12 tháng kể từ ngày sản xuất.',
+  },
 ]
 
 export default function AboutPage() {
@@ -52,7 +89,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-14 items-center">
           <div className="relative h-80 md:h-[500px] rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=700&fit=crop"
+              src="/images/san-day-drink2.webp"
               alt="Gia đình làm bột sắn dây"
               fill
               className="object-cover"
@@ -130,19 +167,19 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="section-title">Quy Trình Sản Xuất</h2>
           <p className="section-subtitle">Minh bạch từng bước — vì sức khỏe của bạn là ưu tiên số 1</p>
-          <div className="grid md:grid-cols-5 gap-4 mt-10">
+          <div className="grid md:grid-cols-4 gap-5 mt-10">
             {steps.map((s, i) => (
-              <div key={i} className="relative">
-                <div className="bg-white rounded-2xl p-5 shadow-sm h-full text-left">
-                  <div className="text-3xl font-black text-brand-100 mb-2">{s.step}</div>
-                  <h3 className="font-bold text-gray-800 text-sm mb-2">{s.title}</h3>
+              <div key={i} className="bg-white rounded-2xl p-5 shadow-sm text-left flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center text-xl">
+                    {s.emoji}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-brand-400 mb-0.5">Bước {s.step}</div>
+                  <h3 className="font-bold text-gray-800 text-sm mb-1">{s.title}</h3>
                   <p className="text-xs text-gray-500 leading-relaxed">{s.desc}</p>
                 </div>
-                {i < steps.length - 1 && (
-                  <div className="hidden md:block absolute -right-2 top-1/2 transform -translate-y-1/2 z-10 text-brand-300">
-                    →
-                  </div>
-                )}
               </div>
             ))}
           </div>
