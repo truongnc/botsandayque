@@ -4,10 +4,10 @@ import { useSearchParams } from 'next/navigation'
 import { CheckCircle } from 'lucide-react'
 
 const products = [
-  'Bột Sắn Dây Nguyên Chất 500g — 120.000₫',
-  'Bột Sắn Dây Nguyên Chất 1kg — 200.000₫',
-  'Combo 3 túi 500g (Tặng 1) — 360.000₫',
-  'Bột Sắn Dây Hộp Quà 2 x 500g (có bọc quà) — 270.000₫',
+  'Bột Sắn Dây Nguyên Chất 500g — 150.000₫',
+  'Bột Sắn Dây Nguyên Chất 1kg — 270.000₫',
+  'Combo 3 túi 500g (Tặng 1) — 450.000₫',
+  'Bột Sắn Dây Hộp Quà 2 x 500g (có bọc quà) — 330.000₫',
 ]
 
 const MoMoIcon = () => (

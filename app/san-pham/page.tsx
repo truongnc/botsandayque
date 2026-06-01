@@ -18,8 +18,8 @@ const products = [
   {
     id: 1,
     name: 'Bột Sắn Dây Nguyên Chất 500g',
-    price: 120000,
-    originalPrice: 140000,
+    price: 150000,
+    originalPrice: 180000,
     image: '/images/bot-san-day.webp',
     badge: 'Bán chạy',
     rating: 4.9,
@@ -30,8 +30,8 @@ const products = [
   {
     id: 2,
     name: 'Bột Sắn Dây Nguyên Chất 1kg',
-    price: 200000,
-    originalPrice: 240000,
+    price: 330000,
+    originalPrice: 320000,
     image: '/images/san-day-drink.webp',
     badge: 'Tiết kiệm',
     rating: 4.8,
@@ -42,8 +42,8 @@ const products = [
   {
     id: 3,
     name: 'Combo 3 túi 500g (Tặng 1)',
-    price: 360000,
-    originalPrice: 480000,
+    price: 450000,
+    originalPrice: 600000,
     image: '/images/san-day-nuoc.jpg',
     badge: 'Ưu đãi nhất',
     rating: 5.0,
@@ -54,8 +54,8 @@ const products = [
   {
     id: 4,
     name: 'Bột Sắn Dây Hộp Quà 2 x 500g',
-    price: 270000,
-    originalPrice: 300000,
+    price: 330000,
+    originalPrice: 380000,
     image: '/images/san-day-drink2.webp',
     badge: 'Quà tặng',
     rating: 4.9,
