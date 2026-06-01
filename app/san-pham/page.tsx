@@ -30,7 +30,7 @@ const products = [
   {
     id: 2,
     name: 'Bột Sắn Dây Nguyên Chất 1kg',
-    price: 330000,
+    price: 270000,
     originalPrice: 320000,
     image: '/images/san-day-drink.webp',
     badge: 'Tiết kiệm',
