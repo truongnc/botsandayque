@@ -52,6 +52,7 @@ function ContactFormInner() {
   const [form, setForm] = useState({
     name: '',
     phone: '',
+    email: '',
     address: '',
     product: preselectedProduct
       ? products.find(p => p.startsWith(preselectedProduct)) || products[0]
@@ -83,6 +84,12 @@ function ContactFormInner() {
         throw new Error(data.error || 'Lỗi không xác định')
       }
       setSubmitted(true)
+      // GA4 + Facebook Pixel purchase event
+      if (typeof window !== 'undefined') {
+        const w = window as any
+        if (w.gtag) w.gtag('event', 'purchase', { event_category: 'ecommerce', event_label: form.product })
+        if (w.fbq) w.fbq('track', 'Purchase', { content_name: form.product, currency: 'VND' })
+      }
     } catch (err: any) {
       setError(err.message || 'Có lỗi xảy ra, vui lòng thử lại hoặc liên hệ trực tiếp qua Zalo.')
     } finally {
@@ -141,6 +148,15 @@ function ContactFormInner() {
             className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition"
           />
         </div>
+      </div>
+
+      <div>
+        <label className="block text-sm font-semibold text-gray-700 mb-1.5">Email <span className="text-gray-400 font-normal">(để nhận xác nhận đơn hàng)</span></label>
+        <input
+          type="email" name="email" value={form.email} onChange={handleChange}
+          placeholder="example@gmail.com"
+          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition"
+        />
       </div>
 
       <div>

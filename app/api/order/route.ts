@@ -6,6 +6,7 @@ import nodemailer from 'nodemailer'
 interface OrderData {
   name: string
   phone: string
+  email: string
   address: string
   product: string
   quantity: string
@@ -35,6 +36,7 @@ async function appendToSheet(order: OrderData) {
         timestamp,
         order.name,
         order.phone,
+        order.email || '',
         order.address,
         order.product,
         order.quantity,
@@ -72,6 +74,7 @@ async function sendEmailNotification(order: OrderData) {
           <table style="width: 100%; border-collapse: collapse;">
             <tr><td style="padding: 8px 0; color: #666; width: 140px;">👤 Họ tên</td><td style="padding: 8px 0; font-weight: bold;">${order.name}</td></tr>
             <tr><td style="padding: 8px 0; color: #666;">📞 Điện thoại</td><td style="padding: 8px 0; font-weight: bold;"><a href="tel:${order.phone}" style="color: #3d782d;">${order.phone}</a></td></tr>
+            ${order.email ? `<tr><td style="padding: 8px 0; color: #666;">📧 Email</td><td style="padding: 8px 0;">${order.email}</td></tr>` : ''}
             <tr><td style="padding: 8px 0; color: #666;">📍 Địa chỉ</td><td style="padding: 8px 0;">${order.address}</td></tr>
             <tr><td style="padding: 8px 0; color: #666;">🛍️ Sản phẩm</td><td style="padding: 8px 0;">${order.product}</td></tr>
             <tr><td style="padding: 8px 0; color: #666;">🔢 Số lượng</td><td style="padding: 8px 0;">${order.quantity}</td></tr>
