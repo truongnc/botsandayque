@@ -11,16 +11,16 @@ const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID
 const inter = Inter({ subsets: ['latin', 'vietnamese'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Sắn Dây Quê | Bột Sắn Dây Nguyên Chất',
-  description: 'Bột sắn dây nguyên chất từ gia đình — sản xuất thủ công, có chứng nhận VSATTP, tốt cho sức khỏe. Giao hàng toàn quốc.',
-  keywords: 'bột sắn dây, sắn dây nguyên chất, thực phẩm healthy, bột sắn dây quê, mua bột sắn dây',
+  title: 'Sắn Dây Quê | Bột Sắn Dây Nhà Làm Nguyên Chất',
+  description: 'Bột sắn dây nhà làm nguyên chất — sản xuất thủ công từ củ sắn ta tươi, ướp hoa bưởi, có chứng nhận VSATTP. Giao hàng toàn quốc.',
+  keywords: 'bột sắn dây, bột sắn dây nhà làm, bột sắn dây nguyên chất, bột sắn quê, mua bột sắn dây, bột sắn dây ta, sắn dây nhà làm',
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',
     apple: '/icon.svg',
   },
   openGraph: {
-    title: 'Sắn Dây Quê | Bột Sắn Dây Nguyên Chất',
+    title: 'Sắn Dây Quê | Bột Sắn Dây Nhà Làm Nguyên Chất',
     description: 'Bột sắn dây nguyên chất từ gia đình — sản xuất thủ công, có chứng nhận VSATTP',
     locale: 'vi_VN',
     type: 'website',

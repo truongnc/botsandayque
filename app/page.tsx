@@ -78,10 +78,10 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Bột Sắn Dây<br />
               <span className="text-brand-600">Nguyên Chất</span><br />
-              Từ Quê Nhà
+              Nhà Làm
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Được làm từ củ sắn dây tươi, qua bàn tay khéo léo của gia đình. Không phụ gia, không tẩy trắng — chỉ có sự thuần khiết của thiên nhiên.
+              Bột sắn dây nhà làm từ củ sắn ta tươi — qua bàn tay khéo léo của gia đình 3 thế hệ. Không phụ gia, không tẩy trắng, ướp hoa bưởi tự nhiên.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/san-pham" className="btn-primary">

@@ -6,7 +6,7 @@ import { Star, CheckCircle, ArrowRight, ShoppingBag } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Sản Phẩm | Sắn Dây Quê',
   description: 'Mua bột sắn dây nguyên chất 500g, 1kg, combo tiết kiệm. Không phụ gia, có chứng nhận VSATTP. Giao hàng toàn quốc.',
-  keywords: 'mua bột sắn dây, bột sắn dây 500g, bột sắn dây 1kg, combo sắn dây, bột sắn dây nguyên chất giá rẻ',
+  keywords: 'bột sắn dây nhà làm, bột sắn quê, mua bột sắn dây nguyên chất, bột sắn dây ta, bột sắn dây 500g, bột sắn dây 1kg',
   openGraph: {
     title: 'Sản Phẩm Bột Sắn Dây Nguyên Chất | Sắn Dây Quê',
     description: 'Bột sắn dây nguyên chất từ gia đình 3 thế hệ. Không phụ gia, có chứng nhận VSATTP.',
