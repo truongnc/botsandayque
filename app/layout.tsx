@@ -4,6 +4,7 @@ import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import LogRocketInit from '@/components/LogRocketInit'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}} />}
       </head>
       <body className="font-sans">
+        <LogRocketInit />
         <Navbar />
         <main>{children}</main>
         <Footer />
