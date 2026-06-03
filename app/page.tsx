@@ -111,7 +111,7 @@ export default function HomePage() {
           <div className="relative flex justify-center">
             <div className="relative w-80 h-80 md:w-96 md:h-96">
               <Image
-                src="/images/bot-san-day.webp"
+                src="/images/bot-san-day-nguyen-chat.png"
                 alt="Bột sắn dây nguyên chất"
                 fill
                 className="object-cover rounded-3xl shadow-2xl"
@@ -281,8 +281,8 @@ export default function HomePage() {
           </div>
           <div className="relative h-72 md:h-96 rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&h=400&fit=crop"
-              alt="Gia đình làm bột sắn dây"
+              src="/images/thu-hoach-san-day.png"
+              alt="Thu hoạch sắn dây"
               fill
               className="object-cover"
             />
@@ -345,6 +345,35 @@ export default function HomePage() {
               <h3 className="font-bold text-gray-800">Thanh toán đa dạng</h3>
               <p className="text-sm text-gray-500">MoMo, ZaloPay, chuyển khoản ngân hàng, Apple Pay.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quy trình sản xuất */}
+      <section className="bg-white py-20">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="section-title">Quy Trình Sản Xuất</h2>
+          <p className="section-subtitle">7 bước thủ công tỉ mỉ — giữ trọn tinh chất từ củ sắn ta tươi đến hũ bột nguyên chất</p>
+          <div className="mt-10 space-y-4">
+            {[
+              { n: '01', label: 'Thu hoạch củ sắn ta', desc: 'Chọn củ sắn ta tươi ngon từ vùng đất đỏ, thu hoạch đúng mùa để đảm bảo hàm lượng tinh bột cao nhất.', img: 'buoc-01.png' },
+              { n: '02', label: 'Rửa sạch & xay nhuyễn', desc: 'Rửa kỹ từng củ để loại bỏ đất cát, sau đó xay nhuyễn bằng máy xay chuyên dụng.', img: 'buoc-02.png' },
+              { n: '03', label: 'Lọc lấy tinh bột', desc: 'Lọc qua vải màn nhiều lần để tách lấy tinh bột trắng tinh, loại bỏ bã xơ.', img: 'buoc-03.png' },
+              { n: '04', label: 'Lắng & phơi nắng tự nhiên', desc: 'Để tinh bột lắng tự nhiên, sau đó phơi nắng trên nia tre — giữ nguyên dưỡng chất.', img: 'buoc-04.png' },
+              { n: '05', label: 'Sấy khô kiểm soát nhiệt độ', desc: 'Sấy ở nhiệt độ thấp để đảm bảo bột khô đều, không mất đi hương vị tự nhiên.', img: 'buoc-05.png' },
+              { n: '06', label: 'Ướp hoa bưởi', desc: 'Ướp cùng cánh hoa bưởi tươi — tạo hương thơm đặc trưng, tự nhiên, không hương liệu.', img: 'buoc-06.png' },
+              { n: '07', label: 'Đóng gói & kiểm định', desc: 'Đóng gói kín, có chứng nhận VSATTP, giao hàng toàn quốc an toàn và nhanh chóng.', img: 'buoc-07.png' },
+            ].map(step => (
+              <div key={step.n} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+                <Image
+                  src={`/images/${step.img}`}
+                  alt={`Bước ${step.n} — ${step.label}`}
+                  width={2094}
+                  height={512}
+                  className="w-full object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
