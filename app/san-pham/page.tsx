@@ -146,6 +146,34 @@ export default function ProductsPage() {
         </div>
       </section>
 
+      {/* Quy trình sản xuất */}
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="section-title">Quy Trình Sản Xuất</h2>
+          <p className="section-subtitle">7 bước thủ công tỉ mỉ — giữ trọn tinh chất từ củ sắn ta tươi đến hũ bột nguyên chất</p>
+          <div className="mt-10 space-y-4">
+            {[
+              { n: '01', label: 'Thu hoạch củ sắn ta', img: 'buoc-01.png' },
+              { n: '02', label: 'Rửa sạch & xay nhuyễn', img: 'buoc-02.png' },
+              { n: '03', label: 'Lọc lấy tinh bột', img: 'buoc-03.png' },
+              { n: '04', label: 'Lắng & phơi nắng tự nhiên', img: 'buoc-04.png' },
+              { n: '05', label: 'Sấy khô kiểm soát nhiệt độ', img: 'buoc-05.png' },
+              { n: '06', label: 'Ướp hoa bưởi', img: 'buoc-06.png' },
+              { n: '07', label: 'Đóng gói & kiểm định', img: 'buoc-07.png' },
+            ].map(step => (
+              <div key={step.n} className="rounded-2xl overflow-hidden shadow-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/images/${step.img}`}
+                  alt={`Bước ${step.n} — ${step.label}`}
+                  className="w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* How to use */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">

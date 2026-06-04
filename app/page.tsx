@@ -349,34 +349,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Quy trình sản xuất */}
-      <section className="bg-white py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="section-title">Quy Trình Sản Xuất</h2>
-          <p className="section-subtitle">7 bước thủ công tỉ mỉ — giữ trọn tinh chất từ củ sắn ta tươi đến hũ bột nguyên chất</p>
-          <div className="mt-10 space-y-4">
-            {[
-              { n: '01', label: 'Thu hoạch củ sắn ta', desc: 'Chọn củ sắn ta tươi ngon từ vùng đất đỏ, thu hoạch đúng mùa để đảm bảo hàm lượng tinh bột cao nhất.', img: 'buoc-01.png' },
-              { n: '02', label: 'Rửa sạch & xay nhuyễn', desc: 'Rửa kỹ từng củ để loại bỏ đất cát, sau đó xay nhuyễn bằng máy xay chuyên dụng.', img: 'buoc-02.png' },
-              { n: '03', label: 'Lọc lấy tinh bột', desc: 'Lọc qua vải màn nhiều lần để tách lấy tinh bột trắng tinh, loại bỏ bã xơ.', img: 'buoc-03.png' },
-              { n: '04', label: 'Lắng & phơi nắng tự nhiên', desc: 'Để tinh bột lắng tự nhiên, sau đó phơi nắng trên nia tre — giữ nguyên dưỡng chất.', img: 'buoc-04.png' },
-              { n: '05', label: 'Sấy khô kiểm soát nhiệt độ', desc: 'Sấy ở nhiệt độ thấp để đảm bảo bột khô đều, không mất đi hương vị tự nhiên.', img: 'buoc-05.png' },
-              { n: '06', label: 'Ướp hoa bưởi', desc: 'Ướp cùng cánh hoa bưởi tươi — tạo hương thơm đặc trưng, tự nhiên, không hương liệu.', img: 'buoc-06.png' },
-              { n: '07', label: 'Đóng gói & kiểm định', desc: 'Đóng gói kín, có chứng nhận VSATTP, giao hàng toàn quốc an toàn và nhanh chóng.', img: 'buoc-07.png' },
-            ].map(step => (
-              <div key={step.n} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/images/${step.img}`}
-                  alt={`Bước ${step.n} — ${step.label}`}
-                  className="w-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="bg-gradient-to-r from-brand-600 to-brand-800 py-16 text-white text-center">
         <div className="max-w-2xl mx-auto px-4">
