@@ -18,7 +18,7 @@ const products = [
     name: 'Bột Sắn Dây Nguyên Chất 1kg',
     price: '270.000₫',
     originalPrice: '320.000₫',
-    image: '/images/san-day-que-bottle.png',
+    image: '/images/san-day-drink.webp',
     badge: 'Tiết kiệm',
     rating: 4.8,
     reviews: 96,
@@ -28,7 +28,7 @@ const products = [
     name: 'Combo 3 túi 500g',
     price: '450.000₫',
     originalPrice: '600.000₫',
-    image: '/images/che-san-day.png',
+    image: '/images/san-day-que-bottle.png',
     badge: 'Ưu đãi',
     rating: 5.0,
     reviews: 54,
@@ -365,11 +365,10 @@ export default function HomePage() {
               { n: '07', label: 'Đóng gói & kiểm định', desc: 'Đóng gói kín, có chứng nhận VSATTP, giao hàng toàn quốc an toàn và nhanh chóng.', img: 'buoc-07.png' },
             ].map(step => (
               <div key={step.n} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={`/images/${step.img}`}
                   alt={`Bước ${step.n} — ${step.label}`}
-                  width={2094}
-                  height={512}
                   className="w-full object-cover"
                 />
               </div>
