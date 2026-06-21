@@ -19,7 +19,7 @@ export default function Footer() {
               className="w-9 h-9 rounded-full bg-brand-700 hover:bg-brand-500 flex items-center justify-center transition-colors">
               <Facebook className="w-4 h-4" />
             </a>
-            <a href="https://zalo.me" target="_blank" rel="noreferrer"
+            <a href="https://zalo.me/0353795785" target="_blank" rel="noreferrer"
               className="w-9 h-9 rounded-full bg-brand-700 hover:bg-brand-500 flex items-center justify-center transition-colors">
               <MessageCircle className="w-4 h-4" />
             </a>
@@ -66,7 +66,7 @@ export default function Footer() {
 
       <div className="border-t border-brand-800">
         <div className="max-w-6xl mx-auto px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-brand-400">
-          <p>© 2024 Sắn Dây Quê. Tất cả quyền được bảo lưu.</p>
+          <p>© {new Date().getFullYear()} Sắn Dây Quê. Tất cả quyền được bảo lưu.</p>
           <p>Giấy phép VSATTP số: 1234/2024/ATTP-ĐK</p>
         </div>
       </div>

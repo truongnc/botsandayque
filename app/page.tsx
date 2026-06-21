@@ -180,7 +180,7 @@ export default function HomePage() {
                       <span className="text-xl font-bold text-brand-600">{p.price}</span>
                       <span className="text-sm text-gray-400 line-through ml-2">{p.originalPrice}</span>
                     </div>
-                    <Link href="/lien-he" className="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
+                    <Link href={`/lien-he?product=${encodeURIComponent(p.name)}`} className="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
                       Đặt mua
                     </Link>
                   </div>
